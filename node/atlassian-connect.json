@@ -1,0 +1,45 @@
+{
+    "key": "my-app",
+    "name": "My app",
+    "description": "My very first app",
+    "baseUrl": "{{localBaseUrl}}",
+    "authentication": {
+        "type": "none"
+    },
+    "modules": {
+        "generalPages": [
+             {
+                 "url": "/get-epics",
+                 "key": "hello-world",
+                 "location": "system.top.navigation.bar",
+                 "name": {
+                     "value": "Greeting"
+                 }
+             }
+         ], 
+        "jiraIssueFields": [
+    {
+        "key" : "benefit-points-field",
+        "name" : {
+            "value" : "Benefit points"
+        },
+        "description" : {
+            "value" : "Benefit points for an issue"
+        },
+        "type": "text"
+    }
+],
+        "jiraProjectPages": [
+      {
+        "url": "/get-epics",
+        "iconUrl": "img/benefits.png",
+        "weight": 100,
+        "name": {
+          "value": "benefit page"
+        },
+        "key": "benefit-points-page"
+      }
+    ]
+
+     }
+}

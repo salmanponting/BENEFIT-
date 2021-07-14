@@ -1,0 +1,43 @@
+{{!< layout}}
+<header class="aui-page-header">
+  <div class="aui-page-header-inner">
+    <div class="aui-page-header-main intro-header">
+      <h1>Projects</h1>
+    </div>
+  </div>
+</header>
+
+<div class="aui-page-panel main-panel">
+  <div class="aui-page-panel-inner">
+    <section class="aui-page-panel-item">
+      <div class="aui-group">
+        <div class="aui-item">
+          
+        <div >
+            {{#each projData}}
+                <div style="width: 80; margin=10px; border: 1px solid lightgray; border-radius: 2px;">
+                                
+                    <h2 style="margin: 10px;">{{projName}}</h2>
+                    
+                            {{#each task}}
+                            <div style="display: flex; flex-direction: row;  align-items: center; padding: 10px;">
+                            <div style="flex: 1;">
+                            <h5 style=" font: bold;">Summary:  </h5>    
+                            <p >{{summary}}</p>
+                            </div>
+                            <div style="flex: 1;">
+                             <h5 style=" font: bold;">Benefits:  </h5>    
+                            <p >{{benefits}}</p>
+                            </div>
+                          </div>
+                        {{/each}}
+                    
+                    
+                </div>
+            {{/each}}
+        </div>
+        </div>
+      
+    </section>
+  </div>
+</div>
